@@ -10,6 +10,7 @@ import { adsSeoLlmoBlogSeed } from "@/content/pages/blog-ads-seo-llmo";
 import { citationsGbpBlogSeed } from "@/content/pages/blog-citations-gbp";
 import { n8nAiAgentsBlogSeed } from "@/content/pages/blog-n8n-ai-agents";
 import { modernWebDesignBlogSeed } from "@/content/pages/blog-modern-web-design";
+import { llmoSeoBlogSeed } from "@/content/pages/blog-llmo-seo";
 
 export type BlogSeed = {
   slug: string;
@@ -758,6 +759,7 @@ export const blogSeeds: BlogSeed[] = [
   citationsGbpBlogSeed,
   n8nAiAgentsBlogSeed,
   modernWebDesignBlogSeed,
+  llmoSeoBlogSeed,
 ];
 
 function blogPostPage(seed: BlogSeed): PageContent {
