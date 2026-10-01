@@ -24,14 +24,14 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/90 font-sans backdrop-blur supports-[backdrop-filter]:bg-background/75">
-      <div className="container-page flex h-16 flex-nowrap items-center justify-between gap-2 md:gap-4 lg:h-20">
-        <Link to="/" className="flex min-w-0 shrink items-center gap-[10px]" aria-label={`${business.name} home`}>
+      <div className="container-page flex h-16 items-center justify-between gap-2 lg:h-20">
+        <Link to="/" className="flex items-center gap-[10px] min-w-0 shrink" aria-label={`${business.name} home`}>
           <img
             src="/1790648464804.png"
             alt="AVR Web Consulting logo"
-            className="h-[48px] w-auto bg-transparent object-contain md:h-[56px]"
+            className="h-[44px] w-auto bg-transparent object-contain md:h-[48px] shrink-0"
           />
-          <span className="flex flex-col justify-center">
+          <span className="flex flex-col justify-center min-w-0">
             <span className="whitespace-nowrap text-[17px] font-[700] leading-[1.1] tracking-[-0.2px] lg:text-[20px]">
               AVR Web Consulting
             </span>
@@ -73,14 +73,14 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex shrink-0 items-center gap-2">
-          <Button asChild className="h-auto whitespace-nowrap rounded-full px-[14px] py-[8px] text-[13px] font-[600] max-[380px]:px-[12px] max-[380px]:py-[7px] max-[380px]:text-[12px] md:h-10 md:px-4 md:py-2 md:text-sm">
+        <div className="flex items-center gap-2 shrink-0">
+          <Button asChild className="rounded-full font-[600] mobile-request-audit-btn shrink-0">
             <Link to="/contact">Request audit</Link>
           </Button>
 
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="rounded-full xl:hidden">
+              <Button variant="outline" size="icon" className="rounded-full xl:hidden shrink-0">
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Open menu</span>
               </Button>
