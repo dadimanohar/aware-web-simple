@@ -8,6 +8,7 @@ import entrepreneur from "@/assets/entrepreneur.jpg.asset.json";
 import teamMeeting from "@/assets/team-meeting.jpg.asset.json";
 import { adsSeoLlmoBlogSeed } from "@/content/pages/blog-ads-seo-llmo";
 import { citationsGbpBlogSeed } from "@/content/pages/blog-citations-gbp";
+import { n8nAiAgentsBlogSeed } from "@/content/pages/blog-n8n-ai-agents";
 
 export type BlogSeed = {
   slug: string;
@@ -754,6 +755,7 @@ export const blogSeeds: BlogSeed[] = [
   },
   adsSeoLlmoBlogSeed,
   citationsGbpBlogSeed,
+  n8nAiAgentsBlogSeed,
 ];
 
 function blogPostPage(seed: BlogSeed): PageContent {
