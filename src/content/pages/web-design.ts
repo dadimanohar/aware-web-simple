@@ -234,7 +234,7 @@ export const ecommerceDevelopment: PageContent = {
   serviceName: "E-commerce Development",
   answer:
     "AVR Web Consulting builds Shopify and WooCommerce stores with SEO-first architecture: crawlable faceted navigation, unique category copy, Product and Review schema, fast mobile checkout and clean product feeds for Google Shopping. Stores are structured so both search engines and AI shopping assistants can read your catalogue accurately.",
-  hero: { image: "/images/full-stack-ecommerce-development.webp", imageAlt: "E-commerce Development — Shopify & WooCommerce | AVR Web Consulting illustration" },
+  hero: { image: "/images/ecommerce-hero-new.jpg", imageAlt: "E-commerce Development — Shopify & WooCommerce | AVR Web Consulting illustration" },
   highlights: [
     { label: "Build time", value: "5–7 weeks" },
     { label: "Product schema", value: "Full" },

@@ -18,7 +18,7 @@ export const fullStackDevelopment: PageContent = {
   serviceName: "Full-Stack Web Development",
   answer:
     "Full-stack web development covers both the interface a user sees and the server, database and integrations behind it. When standard website solutions are not enough, AVR Web Consulting builds custom websites and web applications, selecting the technology stack according to the requirements of each project.",
-  hero: { image: "/images/welcome-to-web-development.webp", imageAlt: "Full-Stack Web Development Services | AVR Web Consulting illustration" },
+  hero: { image: "/images/full-stack-hero-new.jpg", imageAlt: "Full-Stack Web Development Services | AVR Web Consulting illustration" },
   highlights: [
     { label: "Frontend", value: "React, JS, HTML, CSS" },
     { label: "Backend", value: "Node.js, Python, Java" },
