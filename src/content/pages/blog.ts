@@ -14,6 +14,7 @@ import { llmoSeoBlogSeed } from "@/content/pages/blog-llmo-seo";
 import { aiSeoBlogSeed } from "@/content/pages/blog-ai-seo";
 import { aeoSeoBlogSeed } from "@/content/pages/blog-aeo-seo";
 import { geoSeoBlogSeed } from "@/content/pages/blog-geo-seo";
+import { llmSeoBlogSeed } from "@/content/pages/blog-llm-seo";
 
 export type BlogSeed = {
   slug: string;
@@ -766,6 +767,7 @@ export const blogSeeds: BlogSeed[] = [
   aiSeoBlogSeed,
   aeoSeoBlogSeed,
   geoSeoBlogSeed,
+  llmSeoBlogSeed,
 ];
 
 function blogPostPage(seed: BlogSeed): PageContent {
