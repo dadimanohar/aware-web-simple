@@ -251,7 +251,7 @@ export const localSeo: PageContent = {
   serviceName: "Local SEO",
   answer:
     "Local SEO makes your business appear when nearby customers search. AVR Web Consulting optimises your Google Business Profile, builds manually verified local citations within three days, fixes NAP consistency, and targets 'near me' and 'service + city' keywords from $100 per month.",
-  hero: { image: "/images/local-seo-new.webp", imageAlt: "Local SEO Services from $100/month | AVR Web Consulting illustration" },
+  hero: { image: "/images/local-seo-hero.jpg", imageAlt: "Local SEO Services from $100/month | AVR Web Consulting illustration" },
   highlights: [
     { label: "From", value: "$100/mo" },
     { label: "Citations live", value: "3 days" },

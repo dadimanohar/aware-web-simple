@@ -54,7 +54,7 @@ function BlogIndex() {
             src="/images/laptop-mint.webp"
             alt="SEO & AI Search Blog — Playbooks and Guides"
             loading="eager"
-            className="w-full rounded-3xl border border-border object-cover shadow-sm"
+            className="w-full aspect-video rounded-3xl border border-border object-cover shadow-sm"
           />
         </div>
         {blogHub.highlights && (

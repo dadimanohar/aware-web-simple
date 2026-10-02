@@ -667,7 +667,7 @@ export const industriesHub: PageContent = {
   serviceName: "Industry SEO Services",
   answer:
     "AVR Web Consulting serves ten core industries — startups, e-commerce, healthcare, fashion and retail, SaaS and tech, real estate, education, travel, legal and manufacturing. Each programme is built around that sector's buyer intent, decision cycle, compliance constraints and the structured data AI engines need to cite you.",
-  hero: { image: "/images/industries-handshake.webp", imageAlt: "Industries We Serve — SEO & AI Visibility by Sector | AVR Web Consulting illustration" },
+  hero: { image: "/images/industries-hero.png", imageAlt: "Industries We Serve — SEO & AI Visibility by Sector | AVR Web Consulting illustration" },
   highlights: [
     { label: "Industries served", value: "10+" },
     { label: "Markets", value: "India + global" },

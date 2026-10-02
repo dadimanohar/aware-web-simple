@@ -125,7 +125,7 @@ export const aeo: PageContent = {
   serviceName: "Answer Engine Optimization",
   answer:
     "Answer Engine Optimization structures content so answer engines can extract a direct, accurate response and attribute it to you. AVR Web Consulting rewrites pages answer-first, adds FAQPage and HowTo schema, and tightens factual consistency so your pages become the quoted source.",
-  hero: { image: "/images/aeo-new.webp", imageAlt: "Answer Engine Optimization (AEO) Services | AVR Web Consulting illustration" },
+  hero: { image: "/images/aeo-hero.jpg", imageAlt: "Answer Engine Optimization (AEO) Services | AVR Web Consulting illustration" },
   highlights: [
     { label: "Answer blocks", value: "Every page" },
     { label: "FAQs per page", value: "10" },

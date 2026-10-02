@@ -6,6 +6,15 @@ import seoConcept from "@/assets/seo-concept.jpg.asset.json";
 import laptopWork from "@/assets/laptop-work.jpg.asset.json";
 import entrepreneur from "@/assets/entrepreneur.jpg.asset.json";
 import teamMeeting from "@/assets/team-meeting.jpg.asset.json";
+import { adsSeoLlmoBlogSeed } from "@/content/pages/blog-ads-seo-llmo";
+import { citationsGbpBlogSeed } from "@/content/pages/blog-citations-gbp";
+import { n8nAiAgentsBlogSeed } from "@/content/pages/blog-n8n-ai-agents";
+import { modernWebDesignBlogSeed } from "@/content/pages/blog-modern-web-design";
+import { llmoSeoBlogSeed } from "@/content/pages/blog-llmo-seo";
+import { aiSeoBlogSeed } from "@/content/pages/blog-ai-seo";
+import { aeoSeoBlogSeed } from "@/content/pages/blog-aeo-seo";
+import { geoSeoBlogSeed } from "@/content/pages/blog-geo-seo";
+import { llmSeoBlogSeed } from "@/content/pages/blog-llm-seo";
 
 export type BlogSeed = {
   slug: string;
@@ -750,6 +759,15 @@ export const blogSeeds: BlogSeed[] = [
       { question: "What is the most common migration mistake?", answer: "Launching with the staging noindex tag still in place, followed closely by redirecting everything to the homepage." },
     ],
   },
+  adsSeoLlmoBlogSeed,
+  citationsGbpBlogSeed,
+  n8nAiAgentsBlogSeed,
+  modernWebDesignBlogSeed,
+  llmoSeoBlogSeed,
+  aiSeoBlogSeed,
+  aeoSeoBlogSeed,
+  geoSeoBlogSeed,
+  llmSeoBlogSeed,
 ];
 
 function blogPostPage(seed: BlogSeed): PageContent {

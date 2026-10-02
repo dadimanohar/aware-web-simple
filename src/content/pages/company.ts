@@ -12,7 +12,7 @@ export const pricingPage: PageContent = {
     "Fixed monthly SEO, AI SEO, ads, content and web design pricing from AVR Web Consulting. Plans start at $100/month with no lock-in contracts, manual safe work and monthly reporting.",
   answer:
     "AVR Web Consulting's SEO plans start at $100/month for local businesses, $300/month for growth-stage brands and $600/month for enterprise or multi-location programs. AI SEO add-ons start at $150/month. Every plan is month-to-month, includes manual white-hat work, and carries no setup fee.",
-  hero: { image: "/images/pricing-blocks.webp", imageAlt: "SEO & AI SEO Pricing in India — Plans From $100/Month | AVR illustration" },
+  hero: { image: "/images/pricing-hero.jpg", imageAlt: "SEO & AI SEO Pricing in India — Plans From $100/Month | AVR illustration" },
   highlights: [
     { label: "Starting price", value: "$100/mo" },
     { label: "Contract", value: "Month-to-month" },

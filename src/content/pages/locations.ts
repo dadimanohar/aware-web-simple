@@ -436,7 +436,7 @@ export const locationsHub: PageContent = {
   serviceName: "SEO Services by Location",
   answer:
     "AVR Web Consulting is headquartered in Visakhapatnam, India and serves clients across eight Indian metros plus the United States, United Kingdom, United Arab Emirates and Europe. Each market gets locality-specific content, LocalBusiness schema with geo-coordinates and AI visibility tracking tuned to local query patterns.",
-  hero: { image: "/images/locations-map-new.webp", imageAlt: "Locations We Serve — SEO Company in India, USA, UK, UAE & Europe | AVR illustration" },
+  hero: { image: "/images/locations-pin-hero.jpg", imageAlt: "Locations We Serve — SEO Company in India, USA, UK, UAE & Europe | AVR illustration" },
   highlights: [
     { label: "Head office", value: "Visakhapatnam" },
     { label: "Indian metros", value: "8" },

@@ -69,10 +69,10 @@ function FaqHub() {
             </div>
           </div>
           <img
-            src="/images/online-learning-video-call.webp"
+            src="/images/team-video-call-meeting.webp"
             alt="Searchable SEO & AI SEO FAQs"
             loading="eager"
-            className="w-full rounded-3xl border border-border object-cover shadow-sm"
+            className="w-full aspect-video rounded-3xl border border-border object-cover shadow-sm"
           />
         </div>
         <div className="mt-10">
