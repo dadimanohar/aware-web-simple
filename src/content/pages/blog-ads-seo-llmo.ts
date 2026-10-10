@@ -14,7 +14,7 @@ export const adsSeoLlmoBlogSeed = {
   category: "Paid Ads" as const,
   date: "2026-10-01",
   readMinutes: 25,
-  image: "/images/ads-paid-advertising-organic-seo-llmo-seo.webp",
+  image: "/images/google-ads-vs-seo-comparison.webp",
   description: "Educational guide covering digital advertising types, benefits and limitations of paid ads, organic SEO vs paid search, advertising budgets, LLMO SEO and the latest 2026 SEO trends.",
   answer: "Businesses use paid advertising for controlled visibility and organic SEO for long-term search presence. LLMO SEO extends traditional optimization for AI-driven search. The most effective strategies combine paid ads, organic SEO and AI-search optimization based on business goals, economics and timeline.",
   sections: [
