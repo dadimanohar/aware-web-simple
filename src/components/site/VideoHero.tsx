@@ -1,12 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles } from "lucide-react";
 
-import heroVideo from "@/assets/avr-hero.mp4.asset.json";
-import heroPoster from "@/assets/hero-poster.jpg.asset.json";
+import heroVideo from "@/assets/avr-home-hero.mp4.asset.json";
+import heroVideoWebm from "@/assets/avr-home-hero.webm.asset.json";
+import heroPoster from "@/assets/home-hero-poster.jpg.asset.json";
 import { Button } from "@/components/ui/button";
 import { business } from "@/content/site";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function VideoHero({
   eyebrow,
@@ -20,6 +21,7 @@ export function VideoHero({
   secondary?: string;
 }) {
   const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     // Defer video loading slightly to prioritize critical page rendering and LCP
@@ -27,11 +29,16 @@ export function VideoHero({
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    // Sources are inserted after mount, so restart resource selection explicitly.
+    if (shouldLoadVideo) videoRef.current?.load();
+  }, [shouldLoadVideo]);
+
   return (
     <section className="relative isolate min-h-[38rem] overflow-hidden bg-ink text-ink-foreground lg:min-h-[44rem]">
       <video
+        ref={videoRef}
         className="absolute inset-0 h-full w-full object-cover motion-reduce:hidden"
-        src={shouldLoadVideo ? heroVideo.url : undefined}
         poster={heroPoster.url}
         autoPlay
         muted
@@ -40,7 +47,14 @@ export function VideoHero({
         preload={shouldLoadVideo ? "auto" : "none"}
         aria-hidden="true"
         tabIndex={-1}
-      />
+      >
+        {shouldLoadVideo && (
+          <>
+            <source src={heroVideo.url} type="video/mp4" />
+            <source src={heroVideoWebm.url} type="video/webm" />
+          </>
+        )}
+      </video>
       <img
         src={heroPoster.url}
         alt=""

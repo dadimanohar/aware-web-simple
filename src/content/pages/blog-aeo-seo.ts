@@ -55,7 +55,7 @@ export const aeoSeoBlogSeed = {
   slug: "what-is-aeo-seo",
   title: "What Is AEO SEO? Benefits, How to Transition From Traditional SEO, and the Latest SEO Trends",
   h1: "What Is AEO SEO? Benefits, How It Works, and How Traditional SEO Is Evolving",
-  category: "AI SEO",
+  category: "AI SEO" as const,
   date: "2026-10-01",
   readMinutes: 18,
   image: "/images/what-is-aeo-seo.jpg",

@@ -12,7 +12,7 @@ export const llmSeoBlogSeed = {
   slug: "what-is-llm-seo",
   title: "What Is LLM SEO? Benefits, How It Works, and the Transition From Traditional SEO",
   h1: "What Is LLM SEO? Benefits, How It Works, and How Traditional SEO Is Evolving",
-  category: "AI SEO",
+  category: "AI SEO" as const,
   date: "2026-10-01",
   readMinutes: 20,
   image: "/images/what-is-llm-seo.png",

@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Check } from "lucide-react";
 
-import aiEngines from "@/assets/ai-engines.png.asset.json";
-import teamMeeting from "@/assets/team-meeting.jpg.asset.json";
+import aiPlatforms from "@/assets/ai-platforms.jpeg.asset.json";
+import teamCollaboration from "@/assets/team-collaboration.jpeg.asset.json";
 import { VideoHero } from "@/components/site/VideoHero";
 import {
   AnswerBlock,
@@ -31,7 +31,7 @@ const title = "AVR Web Consulting | Digital Marketing Agency";
 const description =
   "Full-service digital marketing agency for SEO, advertising, content, and web development, with advanced AI search, full-stack, and automation capabilities.";
 
-import heroPoster from "@/assets/hero-poster.jpg.asset.json";
+import heroPoster from "@/assets/home-hero-poster.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () =>
@@ -75,10 +75,10 @@ function Home() {
             </div>
           </div>
           <img
-            src={teamMeeting.url}
-            alt="AVR Web Consulting team planning a digital marketing strategy"
+            src={teamCollaboration.url}
+            alt="AVR Web Consulting team planning a digital marketing strategy around a conference table"
             loading="lazy"
-            className="w-full rounded-3xl border border-border object-cover shadow-sm"
+            className="mx-auto w-full max-w-sm rounded-3xl border border-border object-cover shadow-sm"
           />
         </div>
         <div className="mt-12">
@@ -209,8 +209,8 @@ function Home() {
             </Button>
           </div>
           <img
-            src={aiEngines.url}
-            alt="AI search platforms supported by AVR Web Consulting's AI SEO services"
+            src={aiPlatforms.url}
+            alt="AI search platforms covered by AVR Web Consulting's AI SEO services: ChatGPT, Gemini, Claude, DeepSeek, Perplexity and Grok"
             loading="lazy"
             className="w-full rounded-3xl border border-border bg-card object-contain p-6 shadow-sm"
           />

@@ -12,7 +12,7 @@ export const aiSeoBlogSeed = {
   slug: "what-is-ai-seo",
   title: "What Is AI SEO? How It Works, Benefits, and the Evolution from Traditional SEO",
   h1: "What Is AI SEO? How It Works, Benefits, and the Evolution from Traditional SEO",
-  category: "AI SEO",
+  category: "AI SEO" as const,
   date: "2026-10-01",
   readMinutes: 18,
   image: "/images/what-is-ai-seo.jpg",

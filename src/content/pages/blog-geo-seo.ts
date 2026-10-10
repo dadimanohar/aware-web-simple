@@ -12,7 +12,7 @@ export const geoSeoBlogSeed = {
   slug: "what-is-geo-seo",
   title: "What Is GEO SEO? Benefits, Traditional SEO to GEO SEO, and the Latest SEO Trends",
   h1: "What Is GEO SEO? Benefits, How to Transition From Traditional SEO, and the Latest SEO Trends",
-  category: "AI SEO",
+  category: "AI SEO" as const,
   date: "2026-10-01",
   readMinutes: 20,
   image: "/images/what-is-geo-seo.png",
