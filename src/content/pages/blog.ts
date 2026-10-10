@@ -55,7 +55,7 @@ const call = (title: string, text: string) => ({ kind: "callout" as const, title
 
 export const blogSeeds: BlogSeed[] = [
   {
-    slug: "what-is-ai-seo",
+    slug: "what-is-ai-seo-2026-guide",
     title: "What Is AI SEO? A Practical 2026 Guide for Businesses",
     h1: "What is AI SEO and why does it matter in 2026?",
     category: "AI Search",
