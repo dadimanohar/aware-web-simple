@@ -6,8 +6,6 @@ import heroPoster from "@/assets/hero-poster.jpg.asset.json";
 import { Button } from "@/components/ui/button";
 import { business } from "@/content/site";
 
-import { useEffect, useState } from "react";
-
 export function VideoHero({
   eyebrow,
   title,
@@ -19,25 +17,17 @@ export function VideoHero({
   subtitle: string;
   secondary?: string;
 }) {
-  const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
-
-  useEffect(() => {
-    // Defer video loading slightly to prioritize critical page rendering and LCP
-    const timer = setTimeout(() => setShouldLoadVideo(true), 50);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <section className="relative isolate min-h-[38rem] overflow-hidden bg-ink text-ink-foreground lg:min-h-[44rem]">
       <video
         className="absolute inset-0 h-full w-full object-cover motion-reduce:hidden"
-        src={shouldLoadVideo ? heroVideo.url : undefined}
+        src={heroVideo.url}
         poster={heroPoster.url}
         autoPlay
         muted
         loop
         playsInline
-        preload={shouldLoadVideo ? "auto" : "none"}
+        preload="auto"
         aria-hidden="true"
         tabIndex={-1}
       />

@@ -25,7 +25,7 @@ import {
   homeServices,
   homeStats,
 } from "@/content/pages/home";
-import { buildHead, faqSchema } from "@/lib/seo";
+import { buildHead, faqSchema, organizationSchema, websiteSchema } from "@/lib/seo";
 
 const title = "AVR Web Consulting | Digital Marketing Agency";
 const description =
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/")({
       title,
       description,
       path: "/",
-      schemas: [faqSchema(homeFaqs)],
+      schemas: [faqSchema(homeFaqs), organizationSchema(), websiteSchema()],
       links: [
         {
           rel: "preload",

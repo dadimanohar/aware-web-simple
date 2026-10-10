@@ -29,6 +29,7 @@ export function Header() {
           <img
             src="/1790648464804.png"
             alt="AVR Web Consulting logo"
+            fetchPriority="high"
             className="h-[44px] w-auto bg-transparent object-contain md:h-[48px] shrink-0"
           />
           <span className="flex flex-col justify-center min-w-0">
