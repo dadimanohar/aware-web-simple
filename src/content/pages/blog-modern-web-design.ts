@@ -12,7 +12,7 @@ export const modernWebDesignBlogSeed = {
   slug: "what-is-modern-web-designing",
   title: "What Is Modern Web Design? Rules, Digital Marketing & SEO Trends",
   h1: "What Is Modern Web Design? Rules, Digital Marketing & SEO Trends",
-  category: "Web Design",
+  category: "Web Design" as const,
   date: "2026-10-01",
   readMinutes: 20,
   image: "/images/what-is-modern-web-designing.jpg",

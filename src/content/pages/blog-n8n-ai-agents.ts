@@ -12,7 +12,7 @@ export const n8nAiAgentsBlogSeed = {
   slug: "n8n-automation-ai-agents-digital-marketing-seo",
   title: "n8n Automation & AI Agents for Digital Marketing and SEO",
   h1: "n8n Automation & AI Agents for Digital Marketing and SEO",
-  category: "AI SEO",
+  category: "AI SEO" as const,
   date: "2026-10-01",
   readMinutes: 25,
   image: "/images/n8n-automation-ai-agents.jpg",

@@ -20,7 +20,7 @@ export type BlogSeed = {
   slug: string;
   title: string;
   h1: string;
-  category: "AI Search" | "SEO" | "Content" | "Local SEO" | "Paid Ads" | "Web Design";
+  category: "AI Search" | "AI SEO" | "SEO" | "Content" | "Local SEO" | "Paid Ads" | "Web Design";
   date: string;
   readMinutes: number;
   image: string;

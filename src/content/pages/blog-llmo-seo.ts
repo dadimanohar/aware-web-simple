@@ -12,7 +12,7 @@ export const llmoSeoBlogSeed = {
   slug: "what-is-llmo-seo",
   title: "What Is LLMO SEO? Benefits, Traditional SEO to LLMO SEO, and Latest SEO Trends",
   h1: "What Is LLMO SEO? Benefits, Traditional SEO to LLMO SEO, and Latest SEO Trends",
-  category: "AI SEO",
+  category: "AI SEO" as const,
   date: "2026-10-01",
   readMinutes: 20,
   image: "/images/what-is-llmo-seo.jpg",

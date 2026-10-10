@@ -12,7 +12,7 @@ export const citationsGbpBlogSeed = {
   slug: "citations-and-google-business-profile",
   title: "Local Citations & Google Business Profile: Benefits, Types & SEO",
   h1: "Local Citations & Google Business Profile: Benefits, Types & SEO",
-  category: "Local SEO",
+  category: "Local SEO" as const,
   date: "2026-10-01",
   readMinutes: 20,
   image: "/images/citations-and-google-business-profile.jpg",
