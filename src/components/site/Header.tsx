@@ -25,7 +25,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/90 font-sans backdrop-blur supports-[backdrop-filter]:bg-background/75">
       <div className="container-page flex h-16 items-center justify-between gap-2 lg:h-20">
-        <Link to="/" className="flex items-center gap-[10px] min-w-0 shrink" aria-label={`${business.name} home`}>
+        <Link to="/" className="flex flex-1 items-center gap-[10px] min-w-0 shrink" aria-label={`${business.name} home`}>
           <img
             src="/1790648464804.png"
             alt="AVR Web Consulting logo"
@@ -74,10 +74,6 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2 shrink-0">
-          <Button asChild className="rounded-full font-[600] mobile-request-audit-btn shrink-0">
-            <Link to="/contact">Request audit</Link>
-          </Button>
-
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="rounded-full xl:hidden shrink-0">
