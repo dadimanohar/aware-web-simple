@@ -1,8 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles } from "lucide-react";
 
-import heroVideo from "@/assets/avr-hero.mp4.asset.json";
-import heroPoster from "@/assets/hero-poster.jpg.asset.json";
+import heroVideo from "@/assets/avr-home-hero.mp4.asset.json";
+import heroPoster from "@/assets/home-hero-poster.jpg.asset.json";
 import { Button } from "@/components/ui/button";
 import { business } from "@/content/site";
 
