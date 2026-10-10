@@ -9,7 +9,7 @@ interface SocialLinksProps {
     x?: string;
     instagram?: string;
     facebook?: string;
-  };
+  } | undefined;
 }
 
 export function SocialLinks({
