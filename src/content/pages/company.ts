@@ -5,18 +5,18 @@ import entrepreneur from "@/assets/entrepreneur.jpg.asset.json";
 
 export const pricingPage: PageContent = {
   slug: "/pricing",
-  title: "SEO & AI SEO Pricing in India — Plans From $100/Month | AVR",
-  h1: "Transparent SEO and AI SEO pricing",
+  title: "Custom SEO & AI SEO Pricing — Request a Project Quote | AVR",
+  h1: "Tailored SEO and AI Digital Marketing Solutions",
   eyebrow: "Pricing",
   description:
-    "Fixed monthly SEO, AI SEO, ads, content and web design pricing from AVR Web Consulting. Plans start at $100/month with no lock-in contracts, manual safe work and monthly reporting.",
+    "Tailored SEO, AI search visibility, digital marketing, workflow automation and web development pricing from AVR Web Consulting. Custom project-based solutions designed around your specific business goals with no lock-in contracts.",
   answer:
-    "AVR Web Consulting's SEO plans start at $100/month for local businesses, $300/month for growth-stage brands and $600/month for enterprise or multi-location programs. AI SEO add-ons start at $150/month. Every plan is month-to-month, includes manual white-hat work, and carries no setup fee.",
-  hero: { image: "/images/pricing-hero.jpg", imageAlt: "SEO & AI SEO Pricing in India — Plans From $100/Month | AVR illustration" },
+    "At AVR Web Consulting, every project is tailored to your unique requirements, goals, and market competition. We provide transparent, value-driven pricing customized to your specific scope with no lock-in contracts, 100% manual white-hat execution, and regular reporting.",
+  hero: { image: "/images/pricing-hero.jpg", imageAlt: "SEO & AI SEO Pricing in India — Request a Quote | AVR illustration" },
   highlights: [
-    { label: "Starting price", value: "$100/mo" },
+    { label: "Pricing Model", value: "Custom & Scoped" },
     { label: "Contract", value: "Month-to-month" },
-    { label: "Setup fee", value: "$0" },
+    { label: "Strategy", value: "Tailored to Goals" },
     { label: "First audit", value: "On request" },
   ],
   serviceName: "SEO and AI SEO packages",
@@ -31,85 +31,17 @@ export const pricingPage: PageContent = {
     { label: "Contact", to: "/contact" },
   ],
   sections: [
-    
     {
       id: "key-takeaways",
       heading: "Key Takeaways",
       blocks: [
         { kind: "list", items: [
-          "Expert strategies tailored for SEO & AI SEO Pricing in India — Plans From $100/Month",
-          "Data-driven approach without relying on guesswork",
-          "Focus on sustainable, long-term search visibility",
-          "Fully aligned with modern Answer Engine and AI search requirements"
+          "Tailored strategies customized to your industry, competition, and project scope",
+          "Data-driven approach without relying on guesswork or one-size-fits-all packages",
+          "Focus on sustainable, long-term search visibility and measurable ROI",
+          "Fully aligned with modern Answer Engine, GEO, and AI search requirements"
         ]}
       ]
-    }, {
-      id: "plans",
-      heading: "Monthly SEO plans",
-      blocks: [
-        {
-          kind: "paragraph",
-          text: "Each plan is a fixed monthly fee covering strategy, execution and reporting. You keep every asset we build — content, schema, tracking and link placements stay yours if you leave.",
-        },
-        {
-          kind: "table",
-          head: ["Plan", "Best for", "Monthly", "Keywords", "Included"],
-          rows: [
-            [
-              "Starter SEO",
-              "Local shops, clinics, single-location services",
-              "$100",
-              "Up to 15",
-              "Technical fixes, GMB optimisation, 2 pages/month, monthly report",
-            ],
-            [
-              "Growth SEO",
-              "SMBs and D2C brands scaling in one country",
-              "$300",
-              "Up to 60",
-              "Full on-page, 6 content pieces, 8 links, schema, CRO advice",
-            ],
-            [
-              "Enterprise SEO",
-              "Multi-location, SaaS and e-commerce catalogues",
-              "$600+",
-              "150+",
-              "Programmatic pages, log-file audits, dedicated strategist",
-            ],
-            [
-              "AI SEO add-on",
-              "Any plan that wants AI answer visibility",
-              "$150",
-              "AI prompt set",
-              "AEO/GEO content, entity work, AI citation tracking",
-            ],
-          ],
-        },
-      ],
-    },
-    {
-      id: "other-services",
-      heading: "Pricing for ads, content and web design",
-      blocks: [
-        {
-          kind: "table",
-          head: ["Service", "Model", "From"],
-          rows: [
-            ["Google Ads management", "Flat fee or 12% of spend", "$150/month"],
-            ["Meta & LinkedIn Ads", "Flat monthly management", "$150/month"],
-            ["Blog & copywriting", "Per 1,000-word researched article", "$40/article"],
-            ["Guest posting & link building", "Per placement, DA-based", "$50/link"],
-            ["WordPress website", "Fixed project price", "$400/site"],
-            ["E-commerce store", "Fixed project price", "$900/store"],
-            ["One-off technical SEO audit", "Fixed deliverable", "$120"],
-          ],
-        },
-        {
-          kind: "callout",
-          title: "Indian clients",
-          text: "We bill Indian clients in INR at local rates — Starter plans from ₹8,000/month. Ask for an INR quote when you contact us.",
-        },
-      ],
     },
     {
       id: "what-drives-price",
@@ -145,15 +77,15 @@ export const pricingPage: PageContent = {
     },
   ],
   faqs: [
-    { question: "How much does SEO cost per month?", answer: "AVR Web Consulting's SEO costs $100/month for local businesses, $300/month for growth plans and $600+/month for enterprise programs. Indian clients start at ₹8,000/month. There is no setup fee and no lock-in contract." },
-    { question: "Is there a minimum contract?", answer: "No. Every plan is month-to-month. We ask for a fair 3-month view because SEO compounds, but you can cancel any month with 15 days' notice." },
-    { question: "Why is AVR cheaper than most agencies?", answer: "We run a lean, senior team from Visakhapatnam, India, with no expensive sales layer. You pay for execution hours, not offices and account managers." },
-    { question: "Does cheap SEO mean low quality?", answer: "No. Our low prices come from cost of location, not shortcuts. All work is manual and white-hat — no PBNs, no automated links, no scraped content." },
+    { question: "How is project pricing determined?", answer: "Because every business has different competition levels, target markets, and project goals, our pricing is customized to your exact requirements. We provide a transparent scope and quote after understanding your project." },
+    { question: "Is there a minimum contract?", answer: "No. Every engagement is month-to-month. We ask for a fair 3-month view because SEO compounds, but you can cancel any month with 15 days' notice." },
+    { question: "Why is AVR Web Consulting cost-effective?", answer: "We run a lean, senior team from Visakhapatnam, India, with no expensive sales layer. You pay directly for senior execution hours and strategy, not agency bloat." },
+    { question: "Does competitive pricing mean low quality?", answer: "No. Our competitive rates come from our efficient delivery model in India, not shortcuts. All work is manual and white-hat — no PBNs, no automated links, no scraped content." },
     { question: "What does the AI SEO add-on include?", answer: "Answer-first content rewrites, entity and schema work, llms.txt and crawler access setup, plus monthly tracking of how often ChatGPT, Gemini, Perplexity and Google AI Overviews cite your brand." },
     { question: "Do you charge a setup fee?", answer: "No setup fee. The initial audit, keyword map and technical fix list are included in your first month." },
     { question: "How do you bill international clients?", answer: "US, UK, UAE and EU clients are billed in USD via bank transfer, Wise or card. Indian clients are billed in INR with GST invoices." },
-    { question: "Can I buy a one-off audit instead of a monthly plan?", answer: "Yes. A full technical, on-page and AI visibility audit is $120 as a standalone deliverable, and that fee is credited if you start a monthly plan within 30 days." },
-    { question: "What results should I expect for the price?", answer: "Typically measurable technical and on-page gains in 30 days, first ranking movement in 60-90 days, and compounding traffic growth from month 4. Competitive national terms take longer." },
+    { question: "Can I buy a one-off audit instead of an ongoing plan?", answer: "Yes. A full technical, on-page and AI visibility audit is available as a standalone deliverable, and that fee is credited if you start an ongoing plan within 30 days." },
+    { question: "What results should I expect from our services?", answer: "Typically measurable technical and on-page gains in 30 days, first ranking movement in 60-90 days, and compounding traffic growth from month 4. Competitive national terms take longer." },
     { question: "Do prices include ad spend?", answer: "No. Management fees are separate from ad budget, which you pay directly to Google or Meta so you keep full ownership of the ad accounts." },
   ],
 };

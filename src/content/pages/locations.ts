@@ -431,7 +431,7 @@ export const locationsHub: PageContent = {
   title: "Locations We Serve — SEO Company in India, USA, UK, UAE & Europe | AVR",
   h1: "SEO and AI visibility services across India and worldwide",
   description:
-    "AVR Web Consulting serves Visakhapatnam, Delhi NCR, Mumbai, Bangalore, Hyderabad, Chennai, Pune and Kolkata, plus clients in the USA, UK, UAE and Europe. Plans from $100/month.",
+    "AVR Web Consulting serves Visakhapatnam, Delhi NCR, Mumbai, Bangalore, Hyderabad, Chennai, Pune and Kolkata, plus clients in the USA, UK, UAE and Europe. Tailored custom plans for every market.",
   eyebrow: "Locations",
   serviceName: "SEO Services by Location",
   answer:
@@ -441,7 +441,7 @@ export const locationsHub: PageContent = {
     { label: "Head office", value: "Visakhapatnam" },
     { label: "Indian metros", value: "8" },
     { label: "International markets", value: "4" },
-    { label: "Plans from", value: "$100/mo" },
+    { label: "Plans", value: "Tailored" },
   ],
   breadcrumb: [
     { label: "Home", to: "/" },
