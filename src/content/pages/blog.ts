@@ -55,52 +55,6 @@ const call = (title: string, text: string) => ({ kind: "callout" as const, title
 
 export const blogSeeds: BlogSeed[] = [
   {
-    slug: "what-is-ai-seo-2026-guide",
-    title: "What Is AI SEO? A Practical 2026 Guide for Businesses",
-    h1: "What is AI SEO and why does it matter in 2026?",
-    category: "AI Search",
-    date: "2026-01-12",
-    readMinutes: 9,
-    image: "/images/ai-generated-brain.webp",
-    description:
-      "AI SEO is the practice of making your brand retrievable, quotable and cited by AI assistants like ChatGPT, Gemini, Perplexity and Google AI Overviews. Here is how it differs from traditional SEO and how to start.",
-    answer:
-      "AI SEO is optimising a website so AI systems — ChatGPT, Gemini, Perplexity, Claude and Google AI Overviews — can retrieve, understand and cite it. It extends traditional SEO with answer-first content, entity clarity, structured data and AI crawler access, and is measured by citation share rather than rankings alone.",
-    sections: [
-      s("definition", "AI SEO in one paragraph",
-        p("Traditional SEO optimises for a ranked list of ten blue links. AI SEO optimises for a synthesised answer where usually three to five sources get named. The winning page is not the one with the most keywords, it is the one whose facts are easiest to extract, verify and attribute."),
-        tbl(["Dimension", "Traditional SEO", "AI SEO"], [
-          ["Goal", "Rank in position 1-10", "Be cited inside the generated answer"],
-          ["Unit of content", "The page", "The extractable passage"],
-          ["Key signal", "Links and relevance", "Entity clarity, structure, corroboration"],
-          ["Measurement", "Rank tracking, CTR", "Citation share across prompt sets"],
-        ])),
-      s("how-it-works", "How AI systems pick sources",
-        steps([
-          { title: "Query fan-out", text: "The assistant rewrites your question into several sub-queries and retrieves candidate passages for each." },
-          { title: "Passage ranking", text: "Chunks are scored on semantic match, clarity and self-containment — not whole-page authority." },
-          { title: "Corroboration", text: "Facts repeated consistently across independent sources are preferred; contradicted facts get dropped." },
-          { title: "Attribution", text: "The model names the sources it actually used, favouring ones whose wording it could lift cleanly." },
-        ])),
-      s("start", "A 30-day starting plan",
-        l("Do these in order", [
-          "Allow GPTBot, ClaudeBot, PerplexityBot and Google-Extended in robots.txt if you want AI visibility",
-          "Add a 40-60 word direct answer under every H1",
-          "Convert key facts out of images and PDFs into HTML text and tables",
-          "Add Organization, FAQPage and Article schema with consistent sameAs links",
-          "Publish an llms.txt map of your most useful pages",
-          "Build a 30-prompt tracking set and record who gets cited today",
-        ])),
-    ],
-    faqs: [
-      { question: "Is AI SEO different from traditional SEO?", answer: "It is an extension, not a replacement. Crawlability, speed and authority still matter; AI SEO adds answer-first structure, entity clarity and citation tracking." },
-      { question: "Do I need AI SEO if I already rank on Google?", answer: "Yes. Ranking first does not guarantee citation in an AI Overview or ChatGPT answer, and a growing share of research now happens without a click." },
-      { question: "How is AI SEO measured?", answer: "By citation share: how often your brand is named or linked across a fixed prompt set on ChatGPT, Gemini, Perplexity, Claude and AI Overviews." },
-      { question: "How long does AI SEO take to work?", answer: "Structure and schema changes can influence AI Overviews within weeks; model-trained knowledge and consistent citation typically take three to six months." },
-      { question: "Does AI SEO cost more than SEO?", answer: "At AVR Web Consulting it is a $150/month add-on to any SEO plan, because most of the work reuses the same content and technical foundation." },
-    ],
-  },
-  {
     slug: "aeo-vs-geo-vs-llmo",
     title: "AEO vs GEO vs LLMO: What Each Term Actually Means",
     h1: "AEO vs GEO vs LLMO explained (without the hype)",
@@ -868,6 +822,6 @@ export const blogHub: PageContent = {
     { question: "Do you offer a newsletter?", answer: "We send a short monthly digest of new articles and notable search or AI changes. Ask to be added when you contact us." },
     { question: "Are the tactics safe for my site?", answer: "Yes. Everything we publish follows search engine guidelines — we do not document manipulative tactics." },
     { question: "Do you cover markets outside India?", answer: "Yes. Our guides cover US, UK, UAE and European search behaviour alongside Indian markets." },
-    { question: "Can AVR implement what these guides describe?", answer: "Yes. The guides document the exact processes we run for clients from $100/month. Request an audit to start." },
+    { question: "Can AVR implement what these guides describe?", answer: "Yes. The guides document the exact processes we run for clients with customized plans. Request an audit to start." },
   ],
 };

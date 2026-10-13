@@ -15,7 +15,7 @@ export const n8nAiAgentsBlogSeed = {
   category: "AI SEO" as const,
   date: "2026-10-01",
   readMinutes: 25,
-  image: "/images/n8n-automation-ai-agents.jpg",
+  image: "/images/n8n-automation-ai-agents.webp",
   description: "Comprehensive guide to n8n automations, AI agents, agentic workflows, and how they support digital marketing and SEO tasks efficiently and securely.",
   answer: "Traditional automation uses fixed rules, while AI agents use LLMs to dynamically select tools and plan steps to achieve goals. In marketing and SEO, agents help analyze data, generate briefs, and monitor changes, though human approval remains crucial.",
   sections: [

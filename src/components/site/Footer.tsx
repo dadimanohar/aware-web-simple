@@ -33,7 +33,7 @@ export function Footer() {
               </p>
               <p className="flex gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-primary" aria-hidden />
-                <a href={`mailto:${business.email}`} className="hover:text-primary">
+                <a href={`mailto:${business.email}?subject=${encodeURIComponent("Website Inquiry - AVR Web Consulting")}`} className="hover:text-primary">
                   {business.email}
                 </a>
               </p>
