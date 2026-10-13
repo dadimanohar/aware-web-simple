@@ -99,12 +99,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     links: [
       { rel: "stylesheet", href: stylesheetHref },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap",
-      },
+      { rel: "preload", href: "/fonts/dm-sans-latin.woff2", as: "font", type: "font/woff2", crossOrigin: "anonymous" },
+      { rel: "preload", href: "/fonts/space-grotesk-latin.woff2", as: "font", type: "font/woff2", crossOrigin: "anonymous" },
     ],
     scripts: [
       {

@@ -243,7 +243,7 @@ export const llmoSeoBlogSeed = {
     s(
       "llmo-vs-aeo-geo",
       "LLMO vs AEO vs GEO SEO vs AI SEO",
-      p("The terminology surrounding AI search optimization can be confusing. Here is a breakdown of how LLMO fits into the broader ecosystem alongside [AEO](/ai-seo/aeo) (Answer Engine Optimization), [GEO SEO](/ai-seo/geo-seo) (Generative Engine Optimization), and AI SEO."),
+      p("The terminology surrounding AI search optimization can be confusing. Here is a breakdown of how LLMO fits into the broader ecosystem alongside [AEO](/ai-seo/answer-engine-optimization) (Answer Engine Optimization), [GEO SEO](/ai-seo/geo-seo) (Generative Engine Optimization), and AI SEO."),
       tbl(
         ["Term", "Focus Area", "Primary Goal"],
         [

@@ -63,7 +63,7 @@ export const aeoSeoBlogSeed = {
   answer: "Answer Engine Optimization (AEO) focuses on structuring content to directly answer user questions. By providing clear, concise information, AEO helps search engines and AI systems retrieve and present your content as direct answers, enhancing visibility beyond traditional lists of links.",
   sections: [
     s("introduction", "Introduction to Answer Engine Optimization",
-      p("The way people interact with search engines is undergoing a profound transformation. Instead of typing fragmented keywords and sifting through pages of blue links, users are increasingly asking complete, natural language questions and expecting immediate, direct answers. This shift in user behavior is driving the evolution of search toward [Answer Engine Optimization (AEO)](/ai-seo/aeo)."),
+      p("The way people interact with search engines is undergoing a profound transformation. Instead of typing fragmented keywords and sifting through pages of blue links, users are increasingly asking complete, natural language questions and expecting immediate, direct answers. This shift in user behavior is driving the evolution of search toward [Answer Engine Optimization (AEO)](/ai-seo/answer-engine-optimization)."),
       p("AEO is not an entirely new discipline meant to replace traditional SEO; rather, it builds upon it. By focusing on structuring content to directly address user queries, AEO helps brands position themselves as authoritative sources in an era where AI-powered search experiences and featured snippets dominate the top of the results page.")
     ),
     
@@ -105,7 +105,7 @@ export const aeoSeoBlogSeed = {
     ),
 
     s("evolution-of-seo", "How Traditional SEO Evolved Into AEO",
-      p("The transition from traditional keyword-centric SEO to [AEO](/ai-seo/aeo) has been a gradual evolution driven by advancements in natural language processing and changing user expectations."),
+      p("The transition from traditional keyword-centric SEO to [AEO](/ai-seo/answer-engine-optimization) has been a gradual evolution driven by advancements in natural language processing and changing user expectations."),
       l("The evolution can be broken down into key phases:", [
         "Keyword Era: Optimizing for exact-match phrases and search volume.",
         "Intent Era: Understanding why a user is searching (informational, navigational, transactional).",

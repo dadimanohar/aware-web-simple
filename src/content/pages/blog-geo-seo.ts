@@ -100,7 +100,7 @@ export const geoSeoBlogSeed = {
       p("The rapid evolution of search has spawned numerous acronyms. While they share overlapping goals, there are subtle distinctions:"),
       l("Definitions", [
         "**GEO (Generative Engine Optimization):** Focusing on optimizing content specifically for AI-driven generative search features.",
-        "**[AEO (Answer Engine Optimization)](/ai-seo/aeo):** A subset of GEO focused heavily on formatting content to provide direct, factual answers to specific questions.",
+        "**[AEO (Answer Engine Optimization)](/ai-seo/answer-engine-optimization):** A subset of GEO focused heavily on formatting content to provide direct, factual answers to specific questions.",
         "**[AI SEO](/ai-seo):** The broad umbrella term encompassing all strategies used to optimize for AI-driven search, as well as the use of AI tools in the SEO process itself.",
         "**[LLM SEO](/ai-seo/llm-seo) / [LLMO](/ai-seo/llmo):** Large Language Model Optimization focuses on training or influencing the underlying data sets of the models themselves, ensuring brand entities are correctly understood."
       ])

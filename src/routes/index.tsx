@@ -64,7 +64,6 @@ function Home() {
   return (
     <>
       <VideoHero
-        videoSrc="/avr.mp4"
         eyebrow="Full-service digital marketing agency"
         title="Grow Your Business With Smarter Digital Marketing"
         subtitle="AVR Web Consulting helps businesses build stronger online visibility, attract qualified traffic, generate leads, and grow through SEO, advertising, content marketing, and web development."

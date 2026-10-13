@@ -14,6 +14,51 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
+/**
+ * Renders the limited inline markdown used in content seeds —
+ * [label](/path) links and **bold** — as real elements.
+ * Internal targets become router links; external targets open safely.
+ */
+const INLINE_RE = /\[([^\]]+)\]\(([^)\s]+)\)|\*\*([^*]+)\*\*/g;
+
+function renderInline(text: string): ReactNode[] {
+  const nodes: ReactNode[] = [];
+  const re = new RegExp(INLINE_RE.source, "g");
+  let last = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+  while ((match = re.exec(text)) !== null) {
+    if (match.index > last) nodes.push(text.slice(last, match.index));
+    if (match[1] && match[2]) {
+      const href = match[2];
+      const className =
+        "font-medium text-primary underline decoration-primary/40 underline-offset-2 transition-colors hover:decoration-primary";
+      if (/^(https?:)?\/\//.test(href) || href.startsWith("mailto:")) {
+        nodes.push(
+          <a key={key++} href={href} target="_blank" rel="noopener noreferrer" className={className}>
+            {match[1]}
+          </a>,
+        );
+      } else {
+        nodes.push(
+          <Link key={key++} to={href} className={className}>
+            {match[1]}
+          </Link>,
+        );
+      }
+    } else if (match[3]) {
+      nodes.push(
+        <strong key={key++} className="font-semibold text-foreground">
+          {match[3]}
+        </strong>,
+      );
+    }
+    last = re.lastIndex;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
+}
+
 export function Section({
   children,
   className,
@@ -123,7 +168,7 @@ export function Blocks({ blocks }: { blocks: ContentBlock[] }) {
         if (block.kind === "paragraph")
           return (
             <p key={i} className="text-balance-pretty text-base leading-relaxed text-foreground/90">
-              {block.text}
+              {renderInline(block.text)}
             </p>
           );
 
@@ -138,7 +183,7 @@ export function Blocks({ blocks }: { blocks: ContentBlock[] }) {
                       className="mt-1 h-4 w-4 shrink-0 text-primary"
                       aria-hidden="true"
                     />
-                    <span className="text-foreground/90">{item}</span>
+                    <span className="text-foreground/90">{renderInline(item)}</span>
                   </li>
                 ))}
               </ul>
@@ -157,7 +202,7 @@ export function Blocks({ blocks }: { blocks: ContentBlock[] }) {
                     </span>
                     <span>
                       <span className="block font-semibold">{item.title}</span>
-                      <span className="block text-foreground/80">{item.text}</span>
+                      <span className="block text-foreground/80">{renderInline(item.text)}</span>
                     </span>
                   </li>
                 ))}
@@ -239,7 +284,7 @@ export function Blocks({ blocks }: { blocks: ContentBlock[] }) {
         return (
           <div key={i} className="rounded-xl border-l-4 border-amber bg-amber/10 p-5">
             <p className="font-display font-semibold">{block.title}</p>
-            <p className="mt-1 text-foreground/90">{block.text}</p>
+            <p className="mt-1 text-foreground/90">{renderInline(block.text)}</p>
           </div>
         );
       })}

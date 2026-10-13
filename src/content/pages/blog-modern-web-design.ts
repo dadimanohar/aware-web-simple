@@ -107,7 +107,7 @@ export const modernWebDesignBlogSeed = {
     s(
       "ai",
       "Modern Web Design and Artificial Intelligence",
-      p("Artificial Intelligence is revolutionizing how websites are designed and built. [Vibe Coding](/web-design-development/vibe-coding) and AI-assisted IDEs help developers write boilerplate code, spot bugs, and optimize performance faster than ever before. AI tools aid in ideation, generating wireframes, and even proposing color palettes based on textual brand descriptions."),
+      p("Artificial Intelligence is revolutionizing how websites are designed and built. [Vibe Coding](/web-design-development/vibe-coding-ai-assisted-development) and AI-assisted IDEs help developers write boilerplate code, spot bugs, and optimize performance faster than ever before. AI tools aid in ideation, generating wireframes, and even proposing color palettes based on textual brand descriptions."),
       p("However, it is crucial to recognize the limits of AI. While AI can generate code and suggest layouts, it lacks true human empathy. It cannot inherently understand the nuanced emotional state of a user navigating a complex B2B purchasing decision. Human oversight remains essential to ensure the final product resonates emotionally and functionally with real users.")
     ),
     s(
