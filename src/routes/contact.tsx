@@ -1,20 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { pageHead } from "@/components/site/PageTemplate";
+import { PageTemplate, pageHead } from "@/components/site/PageTemplate";
 import type { PageContent } from "@/content/types";
 import { business, fullAddress } from "@/content/site";
 import team from "@/assets/team-meeting.jpg.asset.json";
-import {
-  AnswerBlock,
-  Breadcrumbs,
-  CTABand,
-  ContentSections,
-  FaqAccordion,
-  RelatedLinks,
-  Section,
-  StatBand,
-  TableOfContents,
-} from "@/components/site/sections";
-import { PricingInquiryForm } from "@/components/site/PricingInquiryForm";
 
 const contactPage: PageContent = {
   slug: "/contact",
@@ -114,78 +102,7 @@ const contactPage: PageContent = {
   ],
 };
 
-const contactSectionsForNav = [
-  { id: "inquiry-form", heading: "Let's Discuss Your Project", blocks: [] },
-  ...contactPage.sections,
-];
-
-function ContactPage() {
-  return (
-    <>
-      <Section className="pb-8 pt-10 lg:pb-10 lg:pt-14">
-        <Breadcrumbs trail={contactPage.breadcrumb} />
-        <div className="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
-          <div>
-            {contactPage.eyebrow && (
-              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-                {contactPage.eyebrow}
-              </p>
-            )}
-            <h1 className="text-4xl font-bold leading-[1.08] lg:text-5xl">{contactPage.h1}</h1>
-            <p className="mt-5 max-w-2xl text-balance-pretty text-lg text-muted-foreground">
-              {contactPage.description}
-            </p>
-            <div className="mt-8">
-              <AnswerBlock text={contactPage.answer} />
-            </div>
-          </div>
-          {contactPage.hero?.image && (
-            <img
-              src={contactPage.hero.image}
-              alt={contactPage.hero.imageAlt ?? contactPage.h1}
-              loading="eager"
-              decoding="async"
-              width={1200}
-              height={675}
-              className="w-full aspect-[16/9] rounded-3xl border border-border object-cover shadow-sm"
-            />
-          )}
-        </div>
-        {contactPage.highlights && contactPage.highlights.length > 0 && (
-          <div className="mt-10">
-            <StatBand stats={contactPage.highlights} />
-          </div>
-        )}
-      </Section>
-
-      <Section className="pt-4">
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start">
-          <div>
-            <div id="inquiry-form" className="scroll-mt-28 mb-14">
-              <PricingInquiryForm />
-            </div>
-
-            <ContentSections sections={contactPage.sections} />
-
-            <div className="mt-14">
-              <FaqAccordion faqs={contactPage.faqs} />
-            </div>
-          </div>
-          <aside className="space-y-6 lg:sticky lg:top-28">
-            <TableOfContents sections={contactSectionsForNav} />
-            {contactPage.related && contactPage.related.length > 0 && (
-              <RelatedLinks links={contactPage.related} />
-            )}
-          </aside>
-        </div>
-      </Section>
-
-      <CTABand />
-    </>
-  );
-}
-
 export const Route = createFileRoute("/contact")({
   head: () => pageHead(contactPage),
-  component: ContactPage,
+  component: () => <PageTemplate page={contactPage} />,
 });

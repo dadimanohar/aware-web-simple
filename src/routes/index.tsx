@@ -25,7 +25,7 @@ import {
   homeServices,
   homeStats,
 } from "@/content/pages/home";
-import { buildHead, faqSchema, webPageSchema } from "@/lib/seo";
+import { buildHead, faqSchema } from "@/lib/seo";
 
 const title = "AVR Web Consulting | Digital Marketing Agency";
 const description =
@@ -39,15 +39,7 @@ export const Route = createFileRoute("/")({
       title,
       description,
       path: "/",
-      schemas: [
-        webPageSchema({
-          title,
-          description,
-          path: "/",
-          type: "WebPage",
-        }),
-        faqSchema(homeFaqs),
-      ],
+      schemas: [faqSchema(homeFaqs)],
       links: [
         {
           rel: "preload",
@@ -64,7 +56,6 @@ function Home() {
   return (
     <>
       <VideoHero
-        videoSrc="/avr.mp4"
         eyebrow="Full-service digital marketing agency"
         title="Grow Your Business With Smarter Digital Marketing"
         subtitle="AVR Web Consulting helps businesses build stronger online visibility, attract qualified traffic, generate leads, and grow through SEO, advertising, content marketing, and web development."
@@ -84,7 +75,7 @@ function Home() {
             </div>
           </div>
           <img
-            src="/image1.jpg"
+            src={teamCollaboration.url}
             alt="AVR Web Consulting team planning a digital marketing strategy around a conference table"
             loading="lazy"
             className="mx-auto w-full max-w-sm rounded-3xl border border-border object-cover shadow-sm"
@@ -218,7 +209,7 @@ function Home() {
             </Button>
           </div>
           <img
-            src="/image2.jpeg"
+            src={aiPlatforms.url}
             alt="AI search platforms covered by AVR Web Consulting's AI SEO services: ChatGPT, Gemini, Claude, DeepSeek, Perplexity and Grok"
             loading="lazy"
             className="w-full rounded-3xl border border-border bg-card object-contain p-6 shadow-sm"

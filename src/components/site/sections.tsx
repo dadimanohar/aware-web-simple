@@ -183,44 +183,11 @@ export function Blocks({ blocks }: { blocks: ContentBlock[] }) {
                   <tbody>
                     {block.rows.map((row) => (
                       <tr key={row.join("|")} className="border-t border-border">
-                        {row.map((cell, ci) => {
-                          const isEmail = cell === business.email;
-                          const isPhone = cell === business.phone;
-                          const isWhatsApp = isPhone && row[0]?.toLowerCase().includes("whatsapp");
-
-                          return (
-                            <td key={ci} className="px-4 py-3 align-top text-foreground/90">
-                              {isEmail ? (
-                                <a
-                                  href={`mailto:${business.email}?subject=${encodeURIComponent(
-                                    "Website Inquiry - AVR Web Consulting"
-                                  )}`}
-                                  className="text-primary hover:underline font-medium"
-                                >
-                                  {cell}
-                                </a>
-                              ) : isWhatsApp ? (
-                                <a
-                                  href={business.whatsapp}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-primary hover:underline font-medium"
-                                >
-                                  {cell}
-                                </a>
-                              ) : isPhone ? (
-                                <a
-                                  href={business.phoneHref}
-                                  className="text-primary hover:underline font-medium"
-                                >
-                                  {cell}
-                                </a>
-                              ) : (
-                                cell
-                              )}
-                            </td>
-                          );
-                        })}
+                        {row.map((cell, ci) => (
+                          <td key={ci} className="px-4 py-3 align-top text-foreground/90">
+                            {cell}
+                          </td>
+                        ))}
                       </tr>
                     ))}
                   </tbody>
@@ -308,7 +275,7 @@ export function FaqAccordion({ faqs, heading }: { faqs: Faq[]; heading?: string 
 
 export function CTABand({
   title = "Get an AI visibility & SEO audit",
-  text = "Tell us your target keywords and markets. We reply within one business day with findings, priorities and a tailored proposal.",
+  text = "Tell us your target keywords and markets. We reply within one business day with findings, priorities and a fixed monthly price.",
   ctaText = "Book consultation",
   showWhatsapp = false,
 }: {

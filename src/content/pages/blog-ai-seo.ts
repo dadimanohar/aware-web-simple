@@ -15,8 +15,8 @@ export const aiSeoBlogSeed = {
   category: "AI SEO" as const,
   date: "2026-10-01",
   readMinutes: 18,
-  image: "/images/what-is-ai-seo.webp",
-  description: "Comprehensive guide to AI SEO. Discover how artificial intelligence is changing search, the shift from traditional SEO, actionable 30-day plans, and practical business strategies.",
+  image: "/images/what-is-ai-seo.jpg",
+  description: "Comprehensive guide to AI SEO. Discover how artificial intelligence is changing search, the shift from traditional SEO, and practical business strategies.",
   answer: "AI SEO refers to optimizing content for artificial intelligence-powered search systems, focusing on deep context, entity relationships, and conversational intent, rather than just exact keywords. It builds upon traditional SEO foundations like technical crawlability and helpful content to connect your brand with users through AI-driven interfaces.",
   sections: [
     s("introduction", "Introduction: The Dawn of a New Search Era",
@@ -56,32 +56,13 @@ export const aiSeoBlogSeed = {
       l("Key Mechanisms of AI SEO:", [
         "**User Query & Intent Recognition:** AI models excel at unpacking long, conversational queries. They determine the underlying goal of the searcher, even if spelled incorrectly or phrased unusually.",
         "**Context & Semantic Search:** Algorithms analyze the context of your content. They look for synonyms, related concepts, and natural language patterns rather than exact keyword matches.",
-        "**Entity Extraction & Knowledge Graphs:** Search engines map real-world entities (people, places, concepts, brands). Being recognized as a distinct, authoritative entity is crucial for [AEO (Answer Engine Optimization)](/ai-seo/answer-engine-optimization).",
+        "**Entity Extraction & Knowledge Graphs:** Search engines map real-world entities (people, places, concepts, brands). Being recognized as a distinct, authoritative entity is crucial for [AEO (Answer Engine Optimization)](/ai-seo/aeo).",
         "**Topical Authority:** AI systems prefer comprehensive sources. Building deep, interconnected content clusters around specific subjects demonstrates your expertise better than isolated articles.",
         "**Content Quality & Helpfulness:** The information must be genuinely useful, original, and factually accurate. AI synthesizers discard thin, repetitive, or unhelpful content.",
         "**Structured Data:** Schema markup translates your content into a machine-readable format, explicitly telling the AI what your data means.",
         "**Technical SEO:** If an AI crawler cannot access, render, or understand your site architecture, your content cannot be indexed or synthesized. Foundational [Technical SEO](/seo-services/technical-seo) is non-negotiable.",
         "**Trust and Experience:** Signals of experience, expertise, authoritativeness, and trustworthiness (E-E-A-T) strongly influence which sources an AI model chooses to synthesize.",
         "**AI Visibility:** The ultimate goal is [AI Visibility](/ai-seo/ai-visibility)—appearing as a cited source or a direct recommendation within generative AI responses."
-      ])
-    ),
-    s("how-ai-picks-sources", "How AI Systems Pick Sources & Formulate Answers",
-      p("Unlike classical indexers that score whole pages for a single keyword query, AI generative answer engines execute a multi-phase synthesis pipeline:"),
-      steps([
-        { title: "1. Query Fan-Out", text: "The assistant rewrites the user's prompt into several specific sub-queries and fetches candidate passages across authoritative indexes simultaneously." },
-        { title: "2. Passage Scoring & Semantic Chunking", text: "Retrieved chunks are scored on direct semantic relevance, passage clarity, and factual self-containment. A 60-word passage that directly answers the question outscores a 3,000-word article where the answer is buried." },
-        { title: "3. Cross-Source Corroboration", text: "Models cross-reference claims across multiple independent databases, review platforms, and trade publications. Facts corroborated across independent domains survive synthesis; conflicting or unverified claims get discarded." },
-        { title: "4. Attribution & Citation Linking", text: "The AI engine crafts the final answer and attaches citations and footnotes directly to the sources whose passages provided the cleanest factual basis." }
-      ])
-    ),
-    s("30-day-action-plan", "A Practical 30-Day Starting Action Plan for Businesses",
-      p("Businesses transitioning into AI search optimization can implement this proven 30-day execution roadmap:"),
-      steps([
-        { title: "Days 1–5: Crawler Permissions & Technical Hygiene", text: "Verify that robots.txt does not inadvertently block AI user agents like GPTBot, ClaudeBot, PerplexityBot, and Google-Extended. Ensure Core Web Vitals are optimized with sub-2s load speeds." },
-        { title: "Days 6–12: Answer-First Structure & Passage Optimization", text: "Place a concise 40–60 word direct answer block immediately underneath every primary H1 and commercial H2. Replace PDF data sheets with extractable HTML tables." },
-        { title: "Days 13–18: Knowledge Graph & Entity Schema", text: "Deploy connected JSON-LD markup linking Organization, WebSite, Service, Article, and FAQPage with consistent sameAs references across LinkedIn, Crunchbase, and directories." },
-        { title: "Days 19–24: Machine-Readable Data & llms.txt", text: "Publish an llms.txt file at your domain root detailing your core business capabilities, verified service URLs, and key factual data." },
-        { title: "Days 25–30: Prompt-Set Tracking & Baseline Measurement", text: "Create a 30–50 query prompt set representing real customer questions. Track how often your brand is cited across ChatGPT, Gemini, Perplexity, and AI Overviews." }
       ])
     ),
     s("why-important", "Why Is AI SEO Becoming Important?",
@@ -104,8 +85,8 @@ export const aiSeoBlogSeed = {
         ["Term", "Definition", "Primary Focus"],
         [
           ["**Traditional SEO**", "Search Engine Optimization: Improving visibility in standard, link-based search results.", "Keywords, links, standard rankings."],
-          ["**AI SEO**", "[AI SEO Services](/ai-seo): Broad term for optimizing for AI-enhanced search engines and generative models.", "Semantics, entities, context, AI Overviews."],
-          ["**AEO**", "[Answer Engine Optimization](/ai-seo/answer-engine-optimization): Optimizing content to provide direct, concise answers for AI and voice assistants.", "Direct answers, structured data, featured snippets."],
+          ["**AI SEO**", "Artificial Intelligence SEO: Broad term for optimizing for AI-enhanced search engines.", "Semantics, entities, context, AI Overviews."],
+          ["**AEO**", "[Answer Engine Optimization](/ai-seo/aeo): Optimizing content to provide direct, concise answers for AI and voice assistants.", "Direct answers, structured data, featured snippets."],
           ["**GEO**", "[Generative Engine Optimization](/ai-seo/geo-seo): A specific subset focusing on how to be cited in generative AI summaries.", "Citation metrics, fluency, comprehensive facts."],
           ["**LLM SEO / LLMO**", "[Large Language Model Optimization](/ai-seo/llm-seo): Optimizing your brand's presence across independent LLMs like ChatGPT or Claude.", "Brand mentions, training data inclusion, co-occurrence."]
         ]
@@ -148,13 +129,12 @@ export const aiSeoBlogSeed = {
       p("The landscape will continue to evolve rapidly. We can expect AI models to become increasingly sophisticated at understanding multi-modal intent—processing text, images, video, and audio simultaneously. Hyper-personalization will likely increase, with AI tailoring responses based on the individual user's history, location, and preferences."),
       call("Important Note", "No agency or tool can guarantee visibility or citations in AI Overviews or LLM responses. The algorithms are dynamic, proprietary, and highly volatile. Success requires a long-term commitment to quality, authority, and technical excellence.")
     ),
-    s("how-we-help", "How AVR Web Consulting Can Help With AI SEO",
-      p("Navigating the intersection of traditional search and artificial intelligence requires deep technical expertise and strategic foresight. At AVR Web Consulting, we help businesses bridge this gap with transparent, value-driven execution."),
-      p("We integrate advanced semantic strategies into our comprehensive [SEO Services](/seo-services), [AI Citations & Mentions](/ai-seo/ai-citations-mentions), and [AI Visibility Tracking](/ai-seo/ai-visibility). From conducting deep technical audits to executing sophisticated [AEO](/ai-seo/answer-engine-optimization) and [LLMO](/ai-seo/llmo) campaigns, we build the authoritative digital footprint required to ensure your brand is recognized, trusted, and cited by the next generation of search technologies."),
-      p("Ready to evaluate how AI assistants see your brand? [Discuss your project](/pricing) with our team or [contact us for an AI visibility audit](/contact).")
+    s("how-we-help", "How Our Company Can Help With AI SEO",
+      p("Navigating the intersection of traditional search and artificial intelligence requires deep technical expertise and strategic foresight. At AVR Web Consulting, we help businesses bridge this gap."),
+      p("We integrate advanced semantic strategies into our comprehensive [SEO Services](/seo-services). From conducting deep technical audits to executing sophisticated [AEO](/ai-seo/aeo) and [LLMO SEO](/ai-seo/llmo) campaigns, we build the authoritative digital footprint required to ensure your brand is recognized, trusted, and cited by the next generation of search technologies.")
     ),
     s("faq", "Frequently Asked Questions",
-      p("Here are answers to the most important questions businesses ask about AI SEO.")
+      p("Here are some common questions businesses have about AI SEO.")
     ),
     s("takeaway", "Final Takeaway",
       p("AI SEO is not a fleeting trend; it represents a fundamental evolution in how information is indexed, evaluated, and presented to users. While the technology driving search is advancing rapidly, the core imperative remains unchanged: provide exceptionally valuable, highly organized, and easily accessible information. By embracing semantic search principles, reinforcing your technical foundations, and focusing on undeniable topical authority, your business can thrive in an AI-powered digital ecosystem.")

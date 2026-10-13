@@ -2,7 +2,6 @@ export const business = {
   name: "AVR Web Consulting",
   legalName: "AVR Web Consulting",
   tagline: "Hybrid SEO + AI visibility agency",
-  url: "https://avrwebconsulting.com",
   description:
     "AVR Web Consulting is a hybrid SEO and AI visibility agency in Visakhapatnam, India, serving global clients with traditional SEO, GEO targeting, AEO, LLM SEO, LLMO and AI Overview optimisation.",
   email: "info@avrwebconsulting.com",
@@ -114,7 +113,7 @@ export const navigation: NavGroup[] = [
       {
         label: "Guest Posting & Link Building",
         to: "/content-marketing/guest-posting-link-building",
-        blurb: "High-authority manual outreach",
+        blurb: "Manual placements from $20",
       },
     ],
   },
@@ -167,7 +166,7 @@ export const navigation: NavGroup[] = [
       { label: "Industries We Serve", to: "/industries", blurb: "10+ verticals" },
       { label: "Locations", to: "/locations", blurb: "India metros + global" },
       { label: "Case Studies", to: "/case-studies", blurb: "Real client outcomes" },
-      { label: "Pricing", to: "/pricing", blurb: "Tailored project plans" },
+      { label: "Pricing", to: "/pricing", blurb: "From $100/month" },
       { label: "Blog", to: "/blog", blurb: "AI search playbooks" },
       { label: "FAQs", to: "/faqs", blurb: "200+ answers" },
       { label: "About Us", to: "/about", blurb: "Our story and team" },

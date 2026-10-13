@@ -35,7 +35,7 @@ export const aiSeoHub: PageContent = {
   related: [
     { label: "Technical SEO", to: "/seo-services/technical-seo" },
     { label: "Content marketing", to: "/content-marketing" },
-    { label: "AI SEO pricing", to: "/pricing" },
+    { label: "AI SEO pricing", to: "/pricing/ai-seo-packages" },
   ],
   sections: [
     
@@ -403,7 +403,7 @@ export const aiVisibility: PageContent = {
   serviceName: "AI Visibility",
   answer:
     "AI visibility is how often and how favourably AI assistants mention your brand. AVR Web Consulting tracks a fixed prompt set across the major assistants each month, benchmarks your share of answers against competitors, and closes the content and authority gaps behind the difference.",
-  hero: { image: "/images/ai-brand-mentions.webp", imageAlt: "AI Brand Mentions and Visibility Tracking Services | AVR Web Consulting" },
+  hero: { image: "/images/data-visualization-abstract.webp", imageAlt: "AI Visibility Tracking & Optimisation Services | AVR Web Consulting illustration" },
   highlights: [
     { label: "Prompts tracked", value: "100–300" },
     { label: "Engines", value: "6+" },
@@ -542,7 +542,7 @@ export const aiCitations: PageContent = {
   serviceName: "AI Citations and Mentions",
   answer:
     "AI citations are the linked sources an assistant credits in its answer; mentions are unlinked references to your brand. AVR Web Consulting increases both by placing consistent, verifiable brand information on the third-party sources that assistants retrieve from most in your category.",
-  hero: { image: "/images/ai-citations-verification.webp", imageAlt: "AI Citations & Source Verification Services | AVR Web Consulting" },
+  hero: { image: "/images/how-ai-retrieves-and-cites.webp", imageAlt: "AI Citations & Brand Mentions Services | AVR Web Consulting illustration" },
   highlights: [
     { label: "Placements", value: "Manual only" },
     { label: "Guest posts", value: "From $20" },

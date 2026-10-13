@@ -1,4 +1,4 @@
-import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
+import { createFileRoute, notFound } from "@tanstack/react-router";
 import { PageTemplate, pageHead } from "@/components/site/PageTemplate";
 import { blogPostBySlug, blogSeedBySlug } from "@/content/pages/blog";
 import { NotFoundPage } from "@/components/site/NotFoundPage";
@@ -6,13 +6,6 @@ import { articleSchema, buildHead, breadcrumbSchema, faqSchema } from "@/lib/seo
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }) => {
-    if (params.slug === "what-is-ai-seo-2026-guide") {
-      throw redirect({
-        to: "/blog/$slug",
-        params: { slug: "what-is-ai-seo" },
-        statusCode: 301,
-      });
-    }
     const page = blogPostBySlug[params.slug];
     const seed = blogSeedBySlug[params.slug];
     if (!page || !seed) throw notFound();
@@ -35,7 +28,6 @@ export const Route = createFileRoute("/blog/$slug")({
           description: page.description,
           path: page.slug,
           datePublished: seed.date,
-          ...(page.hero?.image ? { image: page.hero.image } : {}),
         }),
         faqSchema(page.faqs),
         breadcrumbSchema(page.breadcrumb),

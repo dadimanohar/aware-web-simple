@@ -667,11 +667,11 @@ export const industriesHub: PageContent = {
   serviceName: "Industry SEO Services",
   answer:
     "AVR Web Consulting serves ten core industries — startups, e-commerce, healthcare, fashion and retail, SaaS and tech, real estate, education, travel, legal and manufacturing. Each programme is built around that sector's buyer intent, decision cycle, compliance constraints and the structured data AI engines need to cite you.",
-  hero: { image: "/images/industries-hero.webp", imageAlt: "Industries We Serve — SEO & AI Visibility by Sector | AVR Web Consulting illustration" },
+  hero: { image: "/images/industries-hero.png", imageAlt: "Industries We Serve — SEO & AI Visibility by Sector | AVR Web Consulting illustration" },
   highlights: [
     { label: "Industries served", value: "10+" },
     { label: "Markets", value: "India + global" },
-    { label: "Programmes", value: "Tailored" },
+    { label: "Programmes from", value: "$100/mo" },
     { label: "Work", value: "100% manual" },
   ],
   breadcrumb: [
@@ -772,7 +772,7 @@ export const industriesHub: PageContent = {
     {
       question: "What does an industry programme cost?",
       answer:
-        "We provide tailored proposals for focused local or single-service scopes, scaling with content volume, locations and competitiveness. Every quote follows an initial audit so the scope matches the opportunity.",
+        "From $100/month for a focused local or single-service scope, scaling with content volume, locations and competitiveness. Every quote follows an initial audit so the scope matches the opportunity.",
     },
     {
       question: "How quickly do industry programmes show results?",

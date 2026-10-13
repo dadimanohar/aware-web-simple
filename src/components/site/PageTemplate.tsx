@@ -10,55 +10,24 @@ import {
   StatBand,
   TableOfContents,
 } from "@/components/site/sections";
-import {
-  buildHead,
-  breadcrumbSchema,
-  faqSchema,
-  serviceSchema,
-  webPageSchema,
-  contactPageSchema,
-  aboutPageSchema,
-} from "@/lib/seo";
+import { buildHead, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/seo";
 import { SocialLinks } from "@/components/site/SocialLinks";
 
 export function pageHead(page: PageContent) {
-  const schemas: (Record<string, unknown> | null)[] = [];
-
-  if (page.slug === "/contact") {
-    schemas.push(contactPageSchema());
-  } else if (page.slug === "/about") {
-    schemas.push(aboutPageSchema());
-  } else {
-    schemas.push(
-      webPageSchema({
-        title: page.title,
-        description: page.description,
-        path: page.slug,
-        type: "WebPage",
-      })
-    );
-    schemas.push(
-      serviceSchema({
-        name: page.serviceName ?? page.h1,
-        description: page.description,
-        path: page.slug,
-      })
-    );
-  }
-
-  if (page.faqs && page.faqs.length > 0) {
-    schemas.push(faqSchema(page.faqs));
-  }
-  if (page.breadcrumb && page.breadcrumb.length > 0) {
-    schemas.push(breadcrumbSchema(page.breadcrumb));
-  }
-
   return buildHead({
     title: page.title,
     description: page.description,
     path: page.slug,
     ...(page.hero?.image ? { image: page.hero.image } : {}),
-    schemas: schemas.filter(Boolean) as Record<string, unknown>[],
+    schemas: [
+      serviceSchema({
+        name: page.serviceName ?? page.h1,
+        description: page.description,
+        path: page.slug,
+      }),
+      faqSchema(page.faqs),
+      breadcrumbSchema(page.breadcrumb),
+    ],
   });
 }
 
@@ -87,10 +56,7 @@ export function PageTemplate({ page }: { page: PageContent }) {
               src={page.hero.image}
               alt={page.hero.imageAlt ?? page.h1}
               loading="eager"
-              decoding="async"
-              width={1200}
-              height={675}
-              className="w-full aspect-[16/9] rounded-3xl border border-border object-cover shadow-sm"
+              className="w-full rounded-3xl border border-border object-cover shadow-sm"
             />
           )}
         </div>
@@ -113,10 +79,6 @@ export function PageTemplate({ page }: { page: PageContent }) {
                     <img 
                       src={page.author.avatar} 
                       alt={page.author.name} 
-                      width={64}
-                      height={64}
-                      loading="lazy"
-                      decoding="async"
                       className="h-16 w-16 shrink-0 rounded-full object-cover" 
                     />
                   )}

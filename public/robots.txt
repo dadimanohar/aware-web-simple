@@ -31,4 +31,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://avrwebconsulting.com/sitemap.xml
+Sitemap: http://localhost:8080/sitemap.xml

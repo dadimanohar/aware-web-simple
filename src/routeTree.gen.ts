@@ -15,7 +15,6 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as FaqsRouteImport } from './routes/faqs'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
-import { Route as SitemapRouteImport } from './routes/sitemap'
 import { Route as TermsOfServiceRouteImport } from './routes/terms-of-service'
 import { Route as AiSeoIndexRouteImport } from './routes/ai-seo/index'
 import { Route as AiSeoAiCitationsMentionsRouteImport } from './routes/ai-seo/ai-citations-mentions'
@@ -83,11 +82,6 @@ const PricingRoute = PricingRouteImport.update({
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   id: '/privacy-policy',
   path: '/privacy-policy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapRoute = SitemapRouteImport.update({
-  id: '/sitemap',
-  path: '/sitemap',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TermsOfServiceRoute = TermsOfServiceRouteImport.update({
@@ -304,7 +298,6 @@ export interface FileRoutesByFullPath {
   '/faqs': typeof FaqsRoute
   '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
-  '/sitemap': typeof SitemapRoute
   '/terms-of-service': typeof TermsOfServiceRoute
   '/ai-seo/ai-citations-mentions': typeof AiSeoAiCitationsMentionsRoute
   '/ai-seo/ai-overviews': typeof AiSeoAiOverviewsRoute
@@ -351,7 +344,6 @@ export interface FileRoutesByTo {
   '/faqs': typeof FaqsRoute
   '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
-  '/sitemap': typeof SitemapRoute
   '/terms-of-service': typeof TermsOfServiceRoute
   '/ai-seo/ai-citations-mentions': typeof AiSeoAiCitationsMentionsRoute
   '/ai-seo/ai-overviews': typeof AiSeoAiOverviewsRoute
@@ -399,7 +391,6 @@ export interface FileRoutesById {
   '/faqs': typeof FaqsRoute
   '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
-  '/sitemap': typeof SitemapRoute
   '/terms-of-service': typeof TermsOfServiceRoute
   '/ai-seo/ai-citations-mentions': typeof AiSeoAiCitationsMentionsRoute
   '/ai-seo/ai-overviews': typeof AiSeoAiOverviewsRoute
@@ -448,7 +439,6 @@ export interface FileRouteTypes {
     | '/faqs'
     | '/pricing'
     | '/privacy-policy'
-    | '/sitemap'
     | '/terms-of-service'
     | '/ai-seo/ai-citations-mentions'
     | '/ai-seo/ai-overviews'
@@ -495,7 +485,6 @@ export interface FileRouteTypes {
     | '/faqs'
     | '/pricing'
     | '/privacy-policy'
-    | '/sitemap'
     | '/terms-of-service'
     | '/ai-seo/ai-citations-mentions'
     | '/ai-seo/ai-overviews'
@@ -542,7 +531,6 @@ export interface FileRouteTypes {
     | '/faqs'
     | '/pricing'
     | '/privacy-policy'
-    | '/sitemap'
     | '/terms-of-service'
     | '/ai-seo/ai-citations-mentions'
     | '/ai-seo/ai-overviews'
@@ -590,7 +578,6 @@ export interface RootRouteChildren {
   FaqsRoute: typeof FaqsRoute
   PricingRoute: typeof PricingRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
-  SitemapRoute: typeof SitemapRoute
   TermsOfServiceRoute: typeof TermsOfServiceRoute
   AiSeoAiCitationsMentionsRoute: typeof AiSeoAiCitationsMentionsRoute
   AiSeoAiOverviewsRoute: typeof AiSeoAiOverviewsRoute
@@ -673,13 +660,6 @@ declare module '@tanstack/react-router' {
       path: '/privacy-policy'
       fullPath: '/privacy-policy'
       preLoaderRoute: typeof PrivacyPolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap': {
-      id: '/sitemap'
-      path: '/sitemap'
-      fullPath: '/sitemap'
-      preLoaderRoute: typeof SitemapRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/terms-of-service': {
@@ -958,7 +938,6 @@ const rootRouteChildren: RootRouteChildren = {
   FaqsRoute: FaqsRoute,
   PricingRoute: PricingRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
-  SitemapRoute: SitemapRoute,
   TermsOfServiceRoute: TermsOfServiceRoute,
   AiSeoAiCitationsMentionsRoute: AiSeoAiCitationsMentionsRoute,
   AiSeoAiOverviewsRoute: AiSeoAiOverviewsRoute,

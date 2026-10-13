@@ -15,7 +15,7 @@ export const modernWebDesignBlogSeed = {
   category: "Web Design" as const,
   date: "2026-10-01",
   readMinutes: 20,
-  image: "/images/what-is-modern-web-designing.webp",
+  image: "/images/what-is-modern-web-designing.jpg",
   description: "Complete guide to modern web designing: the 20 core rules, accessibility (WCAG 2.2), performance (Core Web Vitals), and the latest 2026 SEO & marketing trends.",
   answer: "Modern web designing is a multidisciplinary approach focused on responsive layouts, fast performance, accessibility, and user experience. It moves beyond mere visuals to actively support digital marketing and SEO goals, ensuring websites are secure, scalable, and optimized for both human users and AI-driven search engines.",
   sections: [

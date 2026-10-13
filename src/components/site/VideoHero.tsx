@@ -14,13 +14,11 @@ export function VideoHero({
   title,
   subtitle,
   secondary,
-  videoSrc = "/avr.mp4",
 }: {
   eyebrow: string;
   title: string;
   subtitle: string;
   secondary?: string;
-  videoSrc?: string;
 }) {
   const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -50,7 +48,12 @@ export function VideoHero({
         aria-hidden="true"
         tabIndex={-1}
       >
-        <source src={videoSrc} type="video/mp4" />
+        {shouldLoadVideo && (
+          <>
+            <source src={heroVideo.url} type="video/mp4" />
+            <source src={heroVideoWebm.url} type="video/webm" />
+          </>
+        )}
       </video>
       <img
         src={heroPoster.url}
