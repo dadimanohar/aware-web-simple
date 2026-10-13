@@ -14,6 +14,51 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
+/**
+ * Renders the limited inline markdown used in content seeds —
+ * [label](/path) links and **bold** — as real elements.
+ * Internal targets become router links; external targets open safely.
+ */
+const INLINE_RE = /\[([^\]]+)\]\(([^)\s]+)\)|\*\*([^*]+)\*\*/g;
+
+function renderInline(text: string): ReactNode[] {
+  const nodes: ReactNode[] = [];
+  const re = new RegExp(INLINE_RE.source, "g");
+  let last = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+  while ((match = re.exec(text)) !== null) {
+    if (match.index > last) nodes.push(text.slice(last, match.index));
+    if (match[1] && match[2]) {
+      const href = match[2];
+      const className =
+        "font-medium text-primary underline decoration-primary/40 underline-offset-2 transition-colors hover:decoration-primary";
+      if (/^(https?:)?\/\//.test(href) || href.startsWith("mailto:")) {
+        nodes.push(
+          <a key={key++} href={href} target="_blank" rel="noopener noreferrer" className={className}>
+            {match[1]}
+          </a>,
+        );
+      } else {
+        nodes.push(
+          <Link key={key++} to={href} className={className}>
+            {match[1]}
+          </Link>,
+        );
+      }
+    } else if (match[3]) {
+      nodes.push(
+        <strong key={key++} className="font-semibold text-foreground">
+          {match[3]}
+        </strong>,
+      );
+    }
+    last = re.lastIndex;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
+}
+
 export function Section({
   children,
   className,
