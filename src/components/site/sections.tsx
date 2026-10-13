@@ -168,7 +168,7 @@ export function Blocks({ blocks }: { blocks: ContentBlock[] }) {
         if (block.kind === "paragraph")
           return (
             <p key={i} className="text-balance-pretty text-base leading-relaxed text-foreground/90">
-              {block.text}
+              {renderInline(block.text)}
             </p>
           );
 
@@ -183,7 +183,7 @@ export function Blocks({ blocks }: { blocks: ContentBlock[] }) {
                       className="mt-1 h-4 w-4 shrink-0 text-primary"
                       aria-hidden="true"
                     />
-                    <span className="text-foreground/90">{item}</span>
+                    <span className="text-foreground/90">{renderInline(item)}</span>
                   </li>
                 ))}
               </ul>
@@ -202,7 +202,7 @@ export function Blocks({ blocks }: { blocks: ContentBlock[] }) {
                     </span>
                     <span>
                       <span className="block font-semibold">{item.title}</span>
-                      <span className="block text-foreground/80">{item.text}</span>
+                      <span className="block text-foreground/80">{renderInline(item.text)}</span>
                     </span>
                   </li>
                 ))}
@@ -284,7 +284,7 @@ export function Blocks({ blocks }: { blocks: ContentBlock[] }) {
         return (
           <div key={i} className="rounded-xl border-l-4 border-amber bg-amber/10 p-5">
             <p className="font-display font-semibold">{block.title}</p>
-            <p className="mt-1 text-foreground/90">{block.text}</p>
+            <p className="mt-1 text-foreground/90">{renderInline(block.text)}</p>
           </div>
         );
       })}
